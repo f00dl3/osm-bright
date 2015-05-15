@@ -1,7 +1,9 @@
-OSM Bright
+OSM Bright - Dark Version
 ==========
 
-![screenshot](https://raw.github.com/mapbox/osm-bright/master/preview.png)
+![screenshot](http://cdn.img42.com/c84e46f9fc02dab3a304742157a9494e.png)
+
+** This is a darker re-do of the OSM Bright style sheet. Readme from OSM Bright is below - all the same instructions apply
 
 OSM Bright is a sensible starting point for quickly making beautiful maps based
 on an OpenStreetMap database. It is written in the [Carto][] styling language
