@@ -168,6 +168,22 @@ Map { background-color: @water; }
   [zoom=4] { line-opacity: 0.4; }
 }
 
+#admin[admin_level='4'][zoom>3] {
+  line-color:@admin_4;
+  line-width:0.5;
+  [zoom=4] { line-opacity: 0.25; }
+  [zoom=5] { line-opacity: 0.3; }
+  [zoom=6] { line-opacity: 0.4; }
+}
+
+#admin[admin_level='6'][zoom>5] {
+  line-color:@admin_6;
+  line-width:0.5;
+  [zoom=6] { line-opacity: 0.25; }
+  [zoom=7] { line-opacity: 0.3; }
+  [zoom=8] { line-opacity: 0.4; }
+}
+
 /* ================================================================== */
 /* BARRIER POINTS
 /* ================================================================== */
