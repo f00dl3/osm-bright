@@ -37,24 +37,24 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #FCFBE7;
-@water:             #C4DFF6;
-@grass:             #E6F2C1;
-@beach:             #FFEEC7;
-@park:              #DAF2C1;
-@cemetery:          #D6DED2;
-@wooded:            #C3D9AD;
-@agriculture:       #F2E8B6;
+@land:              #000000;
+@water:             #000099;
+@grass:             #071607;
+@beach:             #6A5122;
+@park:              #133813;
+@cemetery:          #8E4600;
+@wooded:            #071607;
+@agriculture:       #8B830D;
 
-@building:          #E4E0E0;
-@hospital:          rgb(229,198,195);
-@school:            #FFF5CC;
-@sports:            #B8E6B8;
+@building:          #008B8B;
+@hospital:          #9D0000;
+@school:            #3E1919;
+@sports:            #215E21;
 
 @residential:       @land * 0.98;
 @commercial:        @land * 0.97;
 @industrial:        @land * 0.96;
-@parking:           #EEE;
+@parking:           #565067;
 
 /* ================================================================== */
 /* ROAD COLORS
@@ -69,33 +69,33 @@ Map { font-directory: url(./fonts); }
  *         inner fill (inline).
  */
 
-@motorway_line:     #E65C5C;
+@motorway_line:     #0078FF;
 @motorway_fill:     lighten(@motorway_line,10%);
 @motorway_case:     @motorway_line * 0.9;
 
-@trunk_line:        #E68A5C;
+@trunk_line:        #01B5F0;
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #FFC859;
+@primary_line:      #C6C6C6;
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #FFE873;
+@secondary_line:    #6F6F6F;
 @secondary_fill:    lighten(@secondary_line,10%);
 @secondary_case:    @secondary_line * 0.9;
 
-@standard_line:     @land * 0.85;
-@standard_fill:     #fff;
-@standard_case:     @land * 0.9;
+@standard_line:     #2A2A2A;
+@standard_fill:     lighten(@standard_line,10%);
+@standard_case:     @standard_line * 0.9;
 
-@pedestrian_line:   @standard_line;
-@pedestrian_fill:   #FAFAF5;
-@pedestrian_case:   @land;
+@pedestrian_line:   #6B238E;
+@pedestrian_fill:   lighten(@pedestrian_line,10%);
+@pedestrian_case:   @pedestrian_line * 0.9;
 
-@cycle_line:        @standard_line;
-@cycle_fill:        #FAFAF5;
-@cycle_case:        @land;
+@cycle_line:        #F700FF;
+@cycle_fill:        lighten(@cycle_line,10%);
+@cycle_case:        @cycle_line * 0.9;
 
 @rail_line:         #999;
 @rail_fill:         #fff;
@@ -107,6 +107,8 @@ Map { font-directory: url(./fonts); }
 /* BOUNDARY COLORS
 /* ================================================================== */
 
+@admin_4:	    #FFFFFF;
+@admin_6:	    #2A2A2A;
 @admin_2:           #324;
 
 /* ================================================================== */
@@ -115,36 +117,35 @@ Map { font-directory: url(./fonts); }
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:        fadeout(#fff,34%);
+@place_text:	    #FFFFFF;
+@place_halo:        #444444;
 
-@country_text:      #435;
+@country_text:      @place_text;
 @country_halo:      @place_halo;
 
-@state_text:        #546;
+@state_text:        @place_text;
 @state_halo:        @place_halo;
 
-@city_text:         #444;
+@city_text:         @place_text;
 @city_halo:         @place_halo;
 
-@town_text:         #666;
+@town_text:         @place_text;
 @town_halo:         @place_halo;
 
-@poi_text:          #888;
+@poi_text:          @place_text;
+@poi_halo:	    @place_halo;
 
-@road_text:         #777;
-@road_halo:         #fff;
+@road_text:         @place_text;
+@road_halo:         @place_halo;
 
-@other_text:        #888;
+@other_text:        @place_text;
 @other_halo:        @place_halo;
 
-@locality_text:     #aaa;
-@locality_halo:     @land;
+@locality_text:     @place_text;
+@locality_halo:     @place_halo;
 
 /* Also used for other small places: hamlets, suburbs, localities */
-@village_text:      #888;
+@village_text:      @place_text;
 @village_halo:      @place_halo;
 
 /* ****************************************************************** */
-
-
-
