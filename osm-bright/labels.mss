@@ -267,38 +267,43 @@
   [zoom>=18][area>=0] {
     text-name: "[name]";
     text-halo-radius: 1.5;
-    text-face-name:@sans;
+    text-face-name: @sans_lt_italic;
     text-size: 11;
     text-wrap-width:30;
-    text-fill: #888;
-    text-halo-fill: #fff;
+    text-fill: darken(@place_text,20%);
+    text-halo-fill: darken(@place_halo,20%);
     // Specific style overrides for different types of areas:
     [type='park'][zoom>=10] {
       text-face-name: @sans_lt_italic;
-      text-fill: @park * 0.6;
-      text-halo-fill: lighten(@park, 10);
+      text-fill: darken(@place_text,20%);
+      text-halo-fill: darken(@place_halo,20%);
     }
     [type='golf_course'][zoom>=10] {
-      text-fill: @sports * 0.6;
-      text-halo-fill: lighten(@sports, 10);
+      text-face-name: @sans_lt_italic;
+      text-fill: darken(@place_text,20%);
+      text-halo-fill: darken(@place_halo,20%);
     }
     [type='cemetery'][zoom>=10] {
-      text-fill: @cemetery * 0.6;
-      text-halo-fill: lighten(@cemetery, 10);
+      text-face-name: @sans_lt_italic;
+      text-fill: darken(@place_text,20%);
+      text-halo-fill: darken(@place_halo,20%);
     }
     [type='hospital'][zoom>=10] {
-      text-fill: @hospital * 0.6;
-      text-halo-fill: lighten(@hospital, 10);
+      text-face-name: @sans_lt_italic;
+      text-fill: lighten(@place_text,20%);
+      text-halo-fill: darken(@place_halo,20%);
     }
     [type='college'][zoom>=10],
     [type='school'][zoom>=10],
     [type='university'][zoom>=10] {
-      text-fill: @school * 0.6;
-      text-halo-fill: lighten(@school, 10);
+      text-face-name: @sans_lt_italic;
+      text-fill: darken(@place_text,20%);
+      text-halo-fill: darken(@place_halo,20%);
     }
     [type='water'][zoom>=10] {
-      text-fill: @water * 0.6;
-      text-halo-fill: lighten(@water, 10);
+      text-face-name: @sans_lt_italic;
+      text-fill: darken(@place_text,20%);
+      text-halo-fill: darken(@place_halo,20%);
     }
   }
   [zoom=15][area>1600000],
@@ -347,8 +352,8 @@
 #waterway_label[type='stream'][zoom>=17] {
   text-name: '[name]';
   text-face-name: @sans_italic;
-  text-fill: @water * 0.75;
-  text-halo-fill: fadeout(lighten(@water,5%),25%);
+  text-fill: darken(@place_text,20%);
+  text-halo-fill: darken(@place_text,20%);
   text-halo-radius: 1;
   text-placement: line;
   text-min-distance: 400;
@@ -372,7 +377,7 @@
   shield-name: "[ref]";
   shield-size: 9;
   shield-face-name: @sans_bold;
-  shield-fill: #fff;
+  shield-fill: @road_text;
   shield-file: url(img/shield-motorway-1.png);
   [type='motorway'] {
     [reflen=1] { shield-file: url(img/shield-motorway-1.png); }
