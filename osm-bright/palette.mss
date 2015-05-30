@@ -37,8 +37,8 @@ Map { font-directory: url(./fonts); }
 /* LANDUSE & LANDCOVER COLORS
 /* ================================================================== */
 
-@land:              #2A2A2A;
-@water:             #000099;
+@land:              #020202;
+@water:             #000080;
 @grass:             #071607;
 @beach:             #6A5122;
 @park:              #133813;
@@ -51,9 +51,9 @@ Map { font-directory: url(./fonts); }
 @school:            #3E1919;
 @sports:            #215E21;
 
-@residential:       @land * 0.98;
-@commercial:        @land * 0.97;
-@industrial:        @land * 0.96;
+@residential:       #010101;
+@commercial:        #010101;
+@industrial:        #010101;
 @parking:           #565067;
 
 /* ================================================================== */
@@ -77,15 +77,15 @@ Map { font-directory: url(./fonts); }
 @trunk_fill:        lighten(@trunk_line,10%);
 @trunk_case:        @trunk_line * 0.9;
 
-@primary_line:      #C6C6C6;
+@primary_line:      #5C5C5C;
 @primary_fill:      lighten(@primary_line,10%);
 @primary_case:      @primary_line * 0.9;
 
-@secondary_line:    #6F6F6F;
+@secondary_line:    #4B4B4B;
 @secondary_fill:    lighten(@secondary_line,10%);
 @secondary_case:    @secondary_line * 0.9;
 
-@standard_line:     #2A2A2A;
+@standard_line:     #363636;
 @standard_fill:     lighten(@standard_line,10%);
 @standard_case:     @standard_line * 0.9;
 
@@ -108,8 +108,8 @@ Map { font-directory: url(./fonts); }
 /* ================================================================== */
 
 @admin_4:	    #FFFFFF;
-@admin_6:	    #2A2A2A;
-@admin_2:           #324;
+@admin_6:	    @admin_4;
+@admin_2:           @admin_4;
 
 /* ================================================================== */
 /* LABEL COLORS
